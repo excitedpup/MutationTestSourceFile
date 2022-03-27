@@ -20,6 +20,7 @@
 	    <version>1.7.4</version>
 	</dependency>
 
+
   </dependencies>
 
 
@@ -30,6 +31,17 @@
 				<artifactId>pitest-maven</artifactId>
 				<version>1.7.4</version>
 			</plugin>
+			<plugin>
+              <groupId>org.pitest</groupId>
+              <artifactId>pitest-maven</artifactId>
+              <version>1.7.4</version>
+              <configuration>
+                  <outputFormats>
+                  <outputFormat>XML</outputFormat>
+                <outputFormat>HTML</outputFormat>
+                </outputFormats>
+            </configuration>
+          </plugin>
 		</plugins>
 	</build>
 </project>
